@@ -1,0 +1,50 @@
+body{
+    font-family: 'Rubik',serif;
+    margin: 0px;
+    padding: 0px;
+}
+header .bg{
+    background-image: url('/images/pattern-bg.png');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 130em;
+}
+.header-text{
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 40px;
+}
+.search{
+    margin-top: 40px;
+    text-align: center;
+    border-color: black;
+}
+.search> input{
+    font-size: 18px;
+    outline: transparent;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.go {
+   
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    background-color: black;
+   border: none;
+   border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
