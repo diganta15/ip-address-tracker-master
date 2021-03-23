@@ -1,0 +1,27 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "A simple tracker that uses your IP address to find your location",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d JS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diganta15/ip-address-tracker-master.git"
+  },
+  "author": "Diganta Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diganta15/ip-address-tracker-master/issues"
+  },
+  "homepage": "https://github.com/diganta15/ip-address-tracker-master#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
