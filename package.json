@@ -4,7 +4,7 @@
   "description": "A simple tracker that uses your IP address to find your location",
   "main": "index.js",
   "scripts": {
-    "build": "babel index.js -d JS"
+    "babel": "node_modules/.bin/babel index.js -w -o JS/main.js"
   },
   "repository": {
     "type": "git",
