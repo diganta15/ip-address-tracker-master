@@ -96,8 +96,9 @@ header .bg{
     
     
 }
-.leaflet{
-    background-color: yellow;
+
+#leaflet{
+    /* background-color: yellow; */
     position: absolute;
     top: 360px;
    height: 600px;
