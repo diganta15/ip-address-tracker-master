@@ -25,6 +25,8 @@ header .bg{
     margin-top: 40px;
     text-align: center;
     border-color: black;
+    z-index: 2;
+    position: relative;
 }
 .search> input{
     font-size: 18px;
@@ -39,6 +41,7 @@ header .bg{
     border-bottom-left-radius: 20px;
     margin-right: 0px;
     padding-right: 0px;
+    
 }
 .go {
    outline: transparent;
@@ -50,6 +53,7 @@ header .bg{
    border: none;
    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    cursor: pointer;
 }
 .display{
     position: relative;
@@ -57,33 +61,45 @@ header .bg{
     display: flex;
     padding-left: 260px;
     padding-right: 260px;
-  
+    z-index: 1;
     
 }
 .display> div{
     background-color: #fff;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
 }
-#ip{
+.display > div > p{
+    color: hsl(0, 0%, 59%);
+}
+.display > div > h1{
+    color: hsl(0, 0%, 17%);
+}
+.ipAdd{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     border-right: 1px grey solid;
 }
-#location{
+.location{
      border-right: 1px grey solid;
 }
-#timezone{
+.timezone{
     border-right: 1px grey solid;
+    display: inline;
+    
 }
-#isp{
+.isp{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     
     
 }
-/* .leaflet{
+.leaflet{
     background-color: yellow;
     position: absolute;
-    top: 30px;
-} */
+    top: 360px;
+   height: 600px;
+   width: 100%;
+}
