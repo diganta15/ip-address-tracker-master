@@ -1,106 +1,158 @@
-body{
-    font-family: 'Rubik',serif;
-    margin: 0px;
-    padding: 0px;
+body {
+  font-family: "Rubik", serif;
+  margin: 0px;
+  padding: 0px;
 }
-header .bg{
-    background-image: url('/images/pattern-bg.png');
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: 130em;
-    position: absolute;
-    width: 100%;
-    margin-top: 0px;
+header .bg {
+  background-image: url("images/pattern-bg.png");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 130em;
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
 }
-.header-text{
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-    padding-top: 40px;
-    color: #fff;
-    font-size: 40px;
+.header-text {
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  font-size: 40px;
 }
-.search{
-    margin-top: 40px;
-    text-align: center;
-    border-color: black;
-    z-index: 2;
-    position: relative;
+.search {
+  margin-top: 40px;
+  text-align: center;
+  border-color: black;
+  z-index: 2;
+  position: relative;
 }
-.search> input{
-    font-size: 18px;
-    outline: transparent;
-    width: 30%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-right: 0px;
-    padding-right: 0px;
-    
+.search > input {
+  font-size: 18px;
+  outline: transparent;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 .go {
-   outline: transparent;
-    padding-top: 22px;
-    padding-right: 20px;
-    padding-bottom: 22px;
-    padding-left: 20px;
-    background-color: black;
-   border: none;
-   border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
+  outline: transparent;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  background-color: black;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
-.display{
-    position: relative;
-    padding-top: 20em;
-    display: flex;
-    padding-left: 260px;
-    padding-right: 260px;
-    z-index: 1;
-    
+.display {
+  position: relative;
+  padding-top: 20em;
+  display: flex;
+  padding-left: 260px;
+  padding-right: 260px;
+  z-index: 1;
 }
-.display> div{
-    background-color: #fff;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    width: 100%;
+.display > div {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100%;
 }
-.display > div > p{
-    color: hsl(0, 0%, 59%);
+.display > div > p {
+  color: hsl(0, 0%, 59%);
 }
-.display > div > h1{
-    color: hsl(0, 0%, 17%);
+.display > div > h1 {
+  color: hsl(0, 0%, 17%);
 }
-.ipAdd{
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-right: 1px grey solid;
+.ipAdd {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-right: 1px grey solid;
 }
-.location{
-     border-right: 1px grey solid;
+.location {
+  border-right: 1px grey solid;
 }
-.timezone{
-    border-right: 1px grey solid;
-    display: inline;
-    
+.timezone {
+  border-right: 1px grey solid;
+  display: inline;
 }
-.isp{
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    
-    
+.isp {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-#leaflet{
-    /* background-color: yellow; */
-    position: absolute;
-    top: 360px;
-   height: 600px;
-   width: 100%;
+#leaflet {
+  /* background-color: yellow; */
+  position: absolute;
+  top: 360px;
+  height: 600px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-text {
+    font-size: 30px;
+  }
+  .search {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .search > * {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .search > input {
+    width: 60%;
+    font-size: 10px;
+  }
+  .go {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .display {
+    flex-direction: column;
+    padding-top: 12em;
+    padding-left: 40px;
+    width: 70%;
+  }
+  .display > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .display > div > p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .display > div > h1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .ipAdd {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-right: 1px grey solid;
+}
+.isp {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+}
 }
